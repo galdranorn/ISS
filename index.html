@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Where is the ISS?</title>
+        <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="header--slogan">Where is the ISS?</h1>
+        </header>
+
+        <section class="iss-params">
+            <h2 class="iss-params--speed">Actual speed:</h2>
+            <h2 class="iss-params--distance">Distance travelled:</h2>
+        </section>
+
+        <section class="google-map">
+            <h2 class="google-map--coords"></h2>
+            <div id="map" class="google-map--map"></div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer--social"></div>
+            <div class="footer--copyrights"></div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrXppe2ABHOteqs6fkgOva6s4D1MFaths&callback=initMap"></script>
+    </body>
+
+</html>
