@@ -15,8 +15,14 @@
         </header>
 
         <section class="iss-params">
-            <h2 class="iss-params--speed">Actual speed:</h2>
-            <h2 class="iss-params--distance">Distance travelled:</h2>
+            <h2 class="iss-params--speed">
+                Actual speed:
+                <span id="speed"></span>
+            </h2>
+            <h2 class="iss-params--distance">
+                Distance travelled:
+                <span id="distance"></span>
+            </h2>
         </section>
 
         <section class="google-map">
@@ -29,6 +35,7 @@
             <div class="footer--copyrights"></div>
         </footer>
 
+        <script src="vendor/jquery-3.3.1.min.js"></script>
         <script src="js/script.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrXppe2ABHOteqs6fkgOva6s4D1MFaths&callback=initMap"></script>
     </body>

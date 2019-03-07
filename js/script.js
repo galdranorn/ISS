@@ -1,3 +1,12 @@
+var issSpeed = 0;
+var issDistance = 0;
+var issPosition = { lat: 0, lng: 0 };
+
+$.getJSON('http://api.open-notify.org/iss-now.json', function(data) {
+    console.log(data);
+    console.log(issPosition.lat);
+});
+
 const data = [
     {
         coords: { lat: 51.189, lng: 17.015 }
