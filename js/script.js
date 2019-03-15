@@ -88,12 +88,15 @@ let data = [
     window.initMap = function () {
         var initialLoc = data[0].coords;
 
+        var marker = new google.maps.Marker({
+            position: { lat: issPosition.lat, lng: issPosition.lng },
+            map: map,
+        })
+
         setInterval(function () {
-            let marker = new google.maps.Marker({
-                position: { lat: issPosition.lat, lng: issPosition.lng },
-                map: map,
-            })
+            console.log(marker);
             marker.setPosition(new google.maps.LatLng( issPosition.lat, issPosition.lng ))
+            marker.setMap(map)
             map.panTo(marker.position);
         }, 5000);
 
