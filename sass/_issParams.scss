@@ -19,3 +19,15 @@
     }
 
 }
+
+@media (max-width:668px) {
+    .iss-params {
+        &--distance {
+            font-size: 20px;
+        }
+    
+        &--speed {
+            font-size: 15px;
+        }
+    }
+}

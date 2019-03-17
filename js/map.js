@@ -1,7 +1,6 @@
 let googleMap = function () {
 
     window.initMap = function () {
-        let initialLoc = { lat: issPosition.lat, lng: issPosition.lng };
 
         var image = './images/iss.png';
         let marker = new google.maps.Marker({
@@ -18,7 +17,7 @@ let googleMap = function () {
 
         var map = new google.maps.Map(document.querySelector('#map'), {
             zoom: 3,
-            center: initialLoc,
+            center: { lat: issPosition.lat, lng: issPosition.lng },
             disableDefaultUI: true,
             styles: mapStyles
         });

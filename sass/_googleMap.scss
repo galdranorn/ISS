@@ -134,3 +134,26 @@
       }
 
 }
+
+
+@media (max-width:985px) {
+    .google-map {
+        width: 600px;
+
+        .sk-circle {
+            top: 80px;
+            left: 290px;
+          }
+    }
+ }
+
+ @media (max-width:668px) {
+    .google-map {
+        width: 400px;
+
+        .sk-circle {
+            top: 80px;
+            left: 180px;
+          }
+    }
+ }

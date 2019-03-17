@@ -32,6 +32,12 @@
   }
 }
 
+@media (max-width: 668px) {
+  .header--slogan {
+    font-size: 40px;
+  }
+}
+
 .iss-params {
   color: lightsteelblue;
   text-align: center;
@@ -52,6 +58,15 @@
 
 .iss-params--note {
   font-size: 10px;
+}
+
+@media (max-width: 668px) {
+  .iss-params--distance {
+    font-size: 20px;
+  }
+  .iss-params--speed {
+    font-size: 15px;
+  }
 }
 
 .google-map {
@@ -189,6 +204,50 @@
   40% {
     transform: scale(1);
   }
+}
+
+@media (max-width: 985px) {
+  .google-map {
+    width: 600px;
+  }
+  .google-map .sk-circle {
+    top: 80px;
+    left: 290px;
+  }
+}
+
+@media (max-width: 668px) {
+  .google-map {
+    width: 400px;
+  }
+  .google-map .sk-circle {
+    top: 80px;
+    left: 180px;
+  }
+}
+
+.footer {
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer--copyrights {
+  padding: 10px;
+}
+
+.footer--copyrights-c {
+  display: block;
+  margin: 5px;
+}
+
+.footer--copyrights-gh {
+  color: lightsteelblue;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 body {

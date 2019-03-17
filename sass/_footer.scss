@@ -1,0 +1,23 @@
+.footer {
+    color: $font2;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: $footerSize;
+
+    &--copyrights {
+        padding: 10px;
+
+        &-c {
+            display: block;
+            margin: 5px;
+        }
+
+        &-gh {
+            color: $font1;
+            font-weight: 800;
+            text-decoration: none;
+        }
+    }
+}
