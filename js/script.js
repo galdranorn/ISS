@@ -50,9 +50,3 @@ setInterval(function(){
     });
     
 }, 5000);
-
-
-let data = [
-    { coords: { lat: 51.189, lng: 17.015 }}
-];
-
