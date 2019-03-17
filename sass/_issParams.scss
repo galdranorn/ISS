@@ -1,0 +1,21 @@
+.iss-params {
+    color: lightsteelblue;
+    text-align: center;
+
+    &--distance {
+        font-weight: 600;
+        span {
+            color: yellow;
+        }
+    }
+
+    &--speed {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &--note {
+        font-size: 10px;
+    }
+
+}

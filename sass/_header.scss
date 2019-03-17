@@ -1,0 +1,36 @@
+.header {
+    font-weight: 900;
+    color: $font2;
+    height: 40px;
+    position: relative;
+
+    // header text effect, based on https://codepen.io/slstudios/pen/aOQWJK
+    &--slogan {
+        font-size: $headerSize;
+        background: -webkit-linear-gradient($gradient1 50%, $gradient2 80%) repeat 0 0;
+        background-size: 100% 50px;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-animation: stripes 2s linear infinite;
+        animation: stripes 2s linear infinite;
+        position: relative;
+        display: block;
+        margin-top: 50px;
+        left: 50%;
+        white-space: nowrap;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+}
+
+@-webkit-keyframes stripes {
+    100% {background-position: 0 -50px;}
+}
+@keyframes stripes {
+    100% {background-position: 0 -50px;}
+}

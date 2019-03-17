@@ -15,19 +15,37 @@
         </header>
 
         <section class="iss-params">
-            <h2 class="iss-params--speed">
-                Actual speed:
-                <span id="speed"></span>
-            </h2>
             <h2 class="iss-params--distance">
-                Distance travelled:
+                Distance travelled [K km]: 
                 <span id="distance"></span>
             </h2>
+            <h2 class="iss-params--speed">
+                Actual speed [km/s]:
+                <span id="speed"></span> * / <span id="speedGeo"></span> **
+            </h2>
+            <p class="iss-params--note">
+                * - calculated with Haversine formula; ** - calculated with external library Geolib
+            </p>
+            
         </section>
 
         <section class="google-map">
             <h2 class="google-map--coords"></h2>
             <div id="map" class="google-map--map"></div>
+            <div class="sk-circle" id="loading">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
         </section>
 
         <footer class="footer">
@@ -35,11 +53,18 @@
             <div class="footer--copyrights"></div>
         </footer>
 
+        <!-- vendor scripts (jquery, math, geolib) -->
         <script src="vendor/jquery-3.3.1.min.js"></script>
         <script src="vendor/math.min.js" type="text/javascript"></script>
-        <script src="js/map.js" type="text/javascript"></script>
-        <script src="js/script.js"></script>
+        <script src="vendor/geolib.js" type="text/javascript"></script>
 
+        <!-- written scripts (map, calculations) -->
+        <script src="js/mapStyles.js" type="text/javascript"></script>
+        <script src="js/map.js" type="text/javascript"></script>
+        <script src="js/speedCalculation.js" type="text/javascript"></script>
+        <script src="js/distanceCalculation.js" type="text/javascript"></script>
+
+        <script src="js/script.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrXppe2ABHOteqs6fkgOva6s4D1MFaths&callback=initMap"></script>
     </body>
 
