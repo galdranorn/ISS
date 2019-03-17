@@ -3,13 +3,13 @@
 /* font styles */
 .header { font-weight: 900; color: white; height: 40px; position: relative; }
 
-.header--slogan { font-size: 60px; background: -webkit-linear-gradient(steelblue 50%, white 80%) repeat 0 0; background-size: 100% 50px; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; animation: stripes 2s linear infinite; position: relative; display: block; margin-top: 50px; left: 50%; white-space: nowrap; text-align: center; text-transform: uppercase; transform: translateX(-50%) translateY(-50%); }
+.header--slogan { font-size: 60px; background-image: -webkit-linear-gradient(steelblue 50%, white 80%); background-repeat: repeat; background-position: 0 0; background-size: 100% 50px; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; animation: stripes 2s linear infinite; position: relative; display: block; margin-bottom: 20px; white-space: nowrap; text-align: center; text-transform: uppercase; }
 
 @keyframes stripes { 100% { background-position: 0 -50px; } }
 
 @media (max-width: 668px) { .header--slogan { font-size: 40px; } }
 
-.iss-params { color: lightsteelblue; text-align: center; }
+.iss-params { color: lightsteelblue; text-align: center; padding-top: 30px; }
 
 .iss-params--distance { font-weight: 600; }
 

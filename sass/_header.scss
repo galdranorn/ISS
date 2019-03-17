@@ -7,7 +7,9 @@
     // header text effect, based on https://codepen.io/slstudios/pen/aOQWJK
     &--slogan {
         font-size: $headerSize;
-        background: -webkit-linear-gradient($gradient1 50%, $gradient2 80%) repeat 0 0;
+        background-image: -webkit-linear-gradient($gradient1 50%, $gradient2 80%);
+        background-repeat: repeat;
+        background-position: 0 0;
         background-size: 100% 50px;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -16,14 +18,10 @@
         animation: stripes 2s linear infinite;
         position: relative;
         display: block;
-        margin-top: 50px;
-        left: 50%;
+        margin-bottom: 20px;
         white-space: nowrap;
         text-align: center;
         text-transform: uppercase;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
     }
 
 }
